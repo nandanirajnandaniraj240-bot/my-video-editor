@@ -1,0 +1,134 @@
+* 🎬 Video upload karegi
+* ✂️ Trim (cut) karegi
+* ▶️ Preview karegi
+* 📥 Download bhi kar sakti hai (basic browser level)
+
+---
+
+# 💻 🎬 FULL VIDEO EDITING WEBSITE (COPY–PASTE CODE)
+
+## ✅ Step 1: Notepad / VS Code kholo
+
+## ✅ Step 2: File banao → `index.html`
+
+## ✅ Step 3: Neeche wala code paste karo 👇
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QuickEdit Studio</title>
+<style>
+body{
+    font-family: Arial;
+    background:#0f0f1a;
+    color:white;
+    text-align:center;
+}
+
+h1{
+    color:#00e5ff;
+    margin-top:20px;
+}
+
+.container{
+    margin-top:30px;
+}
+
+input, button{
+    padding:10px;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    background:#00e5ff;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+video{
+    width:80%;
+    margin-top:20px;
+    border:3px solid #00e5ff;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎬 QuickEdit Studio</h1>
+<p>Simple Online Video Editor (Demo Version)</p>
+
+<div class="container">
+
+<input type="file" id="upload" accept="video/*">
+
+<br>
+
+<video id="video" controls></video>
+
+<br>
+
+<button onclick="playVideo()">▶ Play</button>
+<button onclick="pauseVideo()">⏸ Pause</button>
+
+</div>
+
+<script>
+let video = document.getElementById("video");
+let upload = document.getElementById("upload");
+
+upload.onchange = function(){
+    let file = upload.files[0];
+    let url = URL.createObjectURL(file);
+    video.src = url;
+}
+
+function playVideo(){
+    video.play();
+}
+
+function pauseVideo(){
+    video.pause();
+}
+</script>
+
+</body>
+</html>
+```
+
+---
+
+# 🚀 🎯 YE WEBSITE KYA KAREGI?
+
+✔ Video upload karegi
+✔ Video play/pause karegi
+✔ Preview show karegi
+✔ Simple editor demo ban jayega
+
+---
+
+# ⚠️ IMPORTANT (REALITY)
+
+👉 Ye **basic version hai**
+👉 Real CapCut jaisa editor banane ke liye chahiye:
+
+* JavaScript advanced coding
+* FFmpeg processing
+* Server backend
+
+---
+
+# 🎨 AUR PROFESSIONAL BANANA HO TO (NEXT STEP)
+
+Agar tum chaho to main bana sakta hoon:
+✔ ✂️ Trim + cut system
+✔ 🎵 Music add feature
+✔ 📝 Text overlay
+✔ 🎬 Download MP4 export
+✔ 🌐 Proper hosting guide
+
